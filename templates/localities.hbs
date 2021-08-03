@@ -1,7 +1,7 @@
 ---
 {
     "stream": {
-        "$id": "locations",
+        "$id": "localities",
         "source": "knowledgeGraph",
         "destination": "pages",
         "fields": [
@@ -16,15 +16,11 @@
             "c_directoryParent.c_directoryParent.name", 
             "c_directoryParent.c_directoryParent.uid",
             "c_directoryParent.c_directoryParent.id",
-            "c_directoryParent.c_directoryParent.slug",
-            "c_directoryParent.c_directoryParent.c_directoryParent.name" ,
-            "c_directoryParent.c_directoryParent.c_directoryParent.id",
-            "c_directoryParent.c_directoryParent.c_directoryParent.uid",
-            "c_directoryParent.c_directoryParent.c_directoryParent.slug"  
+            "c_directoryParent.c_directoryParent.slug"
             ], 
         "filter" : {
             "entityTypes": [
-                "location"
+                "ce_directoryLocality"
             ]
         }
     },

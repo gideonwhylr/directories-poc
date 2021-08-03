@@ -1,0 +1,26 @@
+---
+{
+    "stream": {
+        "$id": "regions",
+        "source": "knowledgeGraph",
+        "destination": "pages",
+        "fields": [
+            "id", 
+            "uid", 
+            "name",
+            "slug", 
+            "c_directoryParent.name",
+            "c_directoryParent.id",
+            "c_directoryParent.uid",
+            "c_directoryParent.slug" 
+            ], 
+        "filter" : {
+            "entityTypes": [
+                "ce_directoryRegion"
+            ]
+        }
+    },
+    "urlFormat": "{{uid}}"
+}
+---
+<html>hello world</html>
