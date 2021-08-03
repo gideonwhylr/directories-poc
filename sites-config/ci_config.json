@@ -1,0 +1,30 @@
+{
+    "artifactStructure": {
+      "assets": [
+        {
+          "root": "public"
+        }
+      ],
+      "hbsTemplates": [
+        {
+          "root": "templates",
+          "pattern": "*.hbs"
+        }
+      ]
+    },
+    "base_image_tag": "node-12.18",
+    "dependencies": {
+      "installDepsCmd": "echo install",
+      "requiredFiles": []
+    },
+    "buildArtifacts": {
+      "build_setup_cmd": "echo install",
+      "build_cmd": "echo build"
+    },
+    "livePreview": {
+      "serve_setup_cmd": "echo setup",
+      "serve_cmd": "echo serve"
+    },
+    "watch_cmd": "echo watch"
+  }
+  
