@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div>
+             
+                <div>
+                    
+                    using  dot notation: 7334797
+                    
+                </div>
+                <div>
+                        using with uid: 7334797
+                </div>
+                <div>
+                        using with map: map[c_directoryParent:[map[id:dir-root name:Location Directory slug:location-directory-7333619 uid:7333619]] id:dir-fl name:Directory &gt; FL slug:directory--fl-7334773 uid:7334773]
+                </div>
+                
+                <div>first iterator map[c_directoryParent:[map[c_directoryParent:[map[id:dir-root name:Location Directory slug:location-directory-7333619 uid:7333619]] id:dir-fl name:Directory &gt; FL slug:directory--fl-7334773 uid:7334773]] id:dir-fl-northchelsiefort name:Directory &gt; FL &gt; North Chelsiefort slug:directory--fl--north-chelsiefort-7334797 uid:7334797]</div>
+                    <div>second iterator 0 Directory &gt; FL &gt; North Chelsiefort</div>                
+                    <div>second iterator 1 dir-fl-northchelsiefort</div>                
+                    <div>second iterator 2 7334797</div>                
+                    <div>second iterator 3 directory--fl--north-chelsiefort-7334797</div>                
+                    <div>second iterator 4 map[c_directoryParent:[map[id:dir-root name:Location Directory slug:location-directory-7333619 uid:7333619]] id:dir-fl name:Directory &gt; FL slug:directory--fl-7334773 uid:7334773]</div>                
+
+
+                
+ 
+            
+        </div>
+  
+        <div class="text-4xl">Location Page</div>
+        <div> <strong>Name:</strong> Aufderhar-Aufderhar</div>
+        <div> <strong>ID:</strong> 7334776</div>
+    </body>
+</html>

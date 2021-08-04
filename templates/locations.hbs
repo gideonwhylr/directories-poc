@@ -31,4 +31,48 @@
     "urlFormat": "{{uid}}"
 }
 ---
-<html>hello world</html>
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div>
+             
+             {{#each c_directoryParent}} 
+                <div>
+                    
+                    using  dot notation: {{this.uid}}
+                    
+                </div>
+                <div>
+                    {{#with uid}}
+                        using with uid: {{this}}
+                    {{/with}}
+                </div>
+                <div>
+                    {{#with c_directoryParent}}
+                        using with map: {{this}}
+                    {{/with}}
+                </div>
+                
+                <div>first iterator {{this}}</div>
+                {{#each this}}
+                    <div>second iterator {{@index}} {{this}}</div>                
+                {{/each}}
+
+
+                
+ 
+                {{!-- <a href="/{{this.slug}}" class="no-underline text-indigo">{{this.id}}</a> --}}
+            {{/each}}
+        </div>
+  
+        <div class="text-4xl">Location Page</div>
+        <div> <strong>Name:</strong> {{name}}</div>
+        <div> <strong>ID:</strong> {{uid}}</div>
+    </body>
+</html>

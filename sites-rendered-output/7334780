@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div>
+             
+                <div>
+                    
+                    using  dot notation: 7334775
+                    
+                </div>
+                <div>
+                        using with uid: 7334775
+                </div>
+                <div>
+                        using with map: map[id:dir-root name:Location Directory slug:location-directory-7333619 uid:7333619]
+                </div>
+                
+                <div>first iterator map[c_directoryParent:[map[id:dir-root name:Location Directory slug:location-directory-7333619 uid:7333619]] id:dir-il name:Directory &gt; IL slug:directory--il-7334775 uid:7334775]</div>
+                    <div>second iterator 0 Directory &gt; IL</div>                
+                    <div>second iterator 1 dir-il</div>                
+                    <div>second iterator 2 7334775</div>                
+                    <div>second iterator 3 directory--il-7334775</div>                
+                    <div>second iterator 4 map[id:dir-root name:Location Directory slug:location-directory-7333619 uid:7333619]</div>                
+
+
+                
+ 
+            
+        </div>
+  
+        <div class="text-4xl">Location Page</div>
+        <div> <strong>Name:</strong> Directory &gt; IL &gt; North Dougfort</div>
+        <div> <strong>ID:</strong> 7334780</div>
+    </body>
+</html>
