@@ -28,7 +28,7 @@
             ]
         }
     },
-    "urlFormat": "{{uid}}"
+    "urlFormat": "{{slug}}"
 }
 ---
 <!doctype html>
@@ -41,37 +41,22 @@
 
     <body>
         <div>
-             
-             {{#each c_directoryParent}} 
-                <div>
-                    
-                    using  dot notation: {{this.uid}}
-                    
-                </div>
-                <div>
-                    {{#with uid}}
-                        using with uid: {{this}}
-                    {{/with}}
-                </div>
-                <div>
-                    {{#with c_directoryParent}}
-                        using with map: {{this}}
-                    {{/with}}
-                </div>
-                
-                <div>first iterator {{this}}</div>
-                {{#each this}}
-                    <div>second iterator {{@index}} {{this}}</div>                
+
+        </div>
+
+        <div>
+            {{#each c_directoryParent}}
+                {{#each c_directoryParent}}
+                    {{#each c_directoryParent}}
+                        <a href="/{{this.slug}}" class="no-underline text-indigo-500">{{this.name}}</a>
+                    {{/each}}
+                /<a href="/{{this.slug}}" class="no-underline text-indigo-500">{{this.name}}</a>            
                 {{/each}}
-
-
-                
- 
-                {{!-- <a href="/{{this.slug}}" class="no-underline text-indigo">{{this.id}}</a> --}}
-            {{/each}}
+                 / <a href="/{{this.slug}}" class="no-underline text-indigo-500">{{this.name}}</a>
+            {{/each}}            
         </div>
   
-        <div class="text-4xl">Location Page</div>
+        <div class="text-4xl mb-4">Location Page</div>
         <div> <strong>Name:</strong> {{name}}</div>
         <div> <strong>ID:</strong> {{uid}}</div>
     </body>

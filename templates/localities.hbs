@@ -16,7 +16,11 @@
             "c_directoryParent.c_directoryParent.name", 
             "c_directoryParent.c_directoryParent.uid",
             "c_directoryParent.c_directoryParent.id",
-            "c_directoryParent.c_directoryParent.slug"
+            "c_directoryParent.c_directoryParent.slug",
+            "c_directoryEntries.name",
+            "c_directoryEntries.uid",
+            "c_directoryEntries.id",
+            "c_directoryEntries.slug"
             ], 
         "filter" : {
             "entityTypes": [
@@ -24,7 +28,7 @@
             ]
         }
     },
-    "urlFormat": "{{uid}}"
+    "urlFormat": "{{slug}}"
 }
 ---
 <!doctype html>
@@ -36,8 +40,22 @@
     </head>
 
     <body>
-        <div class="text-4xl">Locality Page</div>
-        <div> <strong>Name:</strong> {{name}}</div>
-        <div> something! </div>
+        <div>
+        <div>
+            {{#each c_directoryParent}}
+                {{#each c_directoryParent}}
+                /<a href="/{{this.slug}}" class="no-underline text-indigo-500">{{this.name}}</a>            
+                {{/each}}
+                 / <a href="/{{this.slug}}" class="no-underline text-indigo-500">{{this.name}}</a>
+            {{/each}}            
+        </div>
+        </div>
+        <div class="text-4xl mb-4">Locality Page</div>
+        <div class="mb-4"> <strong>Name:</strong> {{name}}</div>
+
+        <div class="text-xl">Locations in this locality</div>  
+              {{#each c_directoryEntries}}
+                <a href="/{{this.slug}}" class="no-underline text-indigo-500">{{this.name}}</a>
+              {{/each}}
     </body>
 </html>
