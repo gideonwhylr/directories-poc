@@ -28,7 +28,7 @@
             ]
         }
     },
-    "urlFormat": "{{slug}}"
+    "urlFormat": "{{id}}"
 }
 ---
 <!doctype html>
@@ -48,16 +48,14 @@
             {{#each c_directoryParent}}
                 {{#each c_directoryParent}}
                     {{#each c_directoryParent}}
-                        <a href="/{{this.slug}}" class="no-underline text-indigo-500">{{this.name}}</a>
+                        <a href="/{{this.id}}" class="no-underline text-indigo-500">Home</a>
                     {{/each}}
-                /<a href="/{{this.slug}}" class="no-underline text-indigo-500">{{this.name}}</a>            
+                /<a href="/{{this.id}}" class="no-underline text-indigo-500">{{this.name}}</a>            
                 {{/each}}
-                 / <a href="/{{this.slug}}" class="no-underline text-indigo-500">{{this.name}}</a>
+                 / <a href="/{{this.id}}" class="no-underline text-indigo-500">{{this.name}}</a>
             {{/each}}            
         </div>
   
-        <div class="text-4xl mb-4">Location Page</div>
-        <div> <strong>Name:</strong> {{name}}</div>
-        <div> <strong>ID:</strong> {{uid}}</div>
+        <div class="text-4xl mb-4">Store: Welcome to {{name}}</div>
     </body>
 </html>

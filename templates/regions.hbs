@@ -24,7 +24,7 @@
             ]
         }
     },
-    "urlFormat": "{{slug}}"
+    "urlFormat": "{{id}}"
 }
 ---
 <!doctype html>
@@ -39,16 +39,18 @@
         <div>
              {{#each c_directoryParent}} 
                 <div>
-                    <a href="/{{this.slug}}" class="no-underline text-indigo-500">{{this.id}}</a>
+                    <a href="/{{this.slug}}" class="no-underline text-indigo-500">Home</a>
                 </div>
-                
             {{/each}}
         </div>
-        <div class="text-4xl mb-4">Regions Page</div>
-        <div class="mb-4"> <strong>Name:</strong> {{name}}</div>
+        <div class="text-4xl mb-4">Region: {{name}}</div>
+        {{!-- <div class="mb-4"> <strong>Name:</strong> {{name}}</div> --}}
         <div class="text-xl">Localities in this region</div>  
+
+        <ul>
               {{#each c_directoryEntries}}
-                <a href="/{{this.slug}}" class="no-underline text-indigo-500">{{this.name}}</a>
+              <li>  <a href="/{{this.id}}" class="no-underline text-indigo-500">{{this.name}}</a> </li>
               {{/each}}
+        </ul>
     </body>
 </html>
